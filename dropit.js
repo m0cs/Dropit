@@ -51,7 +51,7 @@
                     // Close if outside click
                     $(document).on('click', function(){
                         settings.beforeHide.call(this);
-                        $('.dropit-open').removeClass('dropit-open').find('.dropit-submenu').hide();
+                        $('.dropit-submenu.dropit-open').hide().removeClass('dropit-open');
                         settings.afterHide.call(this);
                     });
 
