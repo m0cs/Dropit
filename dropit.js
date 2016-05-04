@@ -57,11 +57,11 @@
 
                     // If hover
                     if(settings.action == 'mouseenter'){
-                        $el.on('mouseleave', '.dropit-open', function(){
-                            settings.beforeHide.call(this);
-                            $(this).removeClass('dropit-open').find(settings.submenuEl).hide();
-                            settings.afterHide.call(this);
-                        });
+                        $el.on('mouseleave', function(){
+                        var menu = $('#' + this.id + ' .dropit-open');
+                        settings.beforeHide.call(menu);
+                        menu.removeClass('dropit-open').hide();
+                        settings.afterHide.call(menu);
                     }
 
                     settings.afterLoad.call(this);
