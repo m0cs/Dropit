@@ -30,7 +30,7 @@
                         // Close click menu's if clicked again
                         if(settings.action == 'click' && $(this).parents(settings.triggerParentEl).hasClass('dropit-open')){
                             settings.beforeHide.call(this);
-                            $(this).parents(settings.triggerParentEl).removeClass('dropit-open').find(settings.submenuEl).hide();
+                            $('.dropit-open').removeClass('dropit-open').find('.dropit-submenu').hide();
                             settings.afterHide.call(this);
                             return false;
                         }
