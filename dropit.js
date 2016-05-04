@@ -58,10 +58,11 @@
                     // If hover
                     if(settings.action == 'mouseenter'){
                         $el.on('mouseleave', function(){
-                        var menu = $('#' + this.id + ' .dropit-open');
-                        settings.beforeHide.call(menu);
-                        menu.removeClass('dropit-open').hide();
-                        settings.afterHide.call(menu);
+                            var menu = $('#' + this.id + ' .dropit-open');
+                            settings.beforeHide.call(menu);
+                            menu.removeClass('dropit-open').hide();
+                            settings.afterHide.call(menu);
+                        });
                     }
 
                     settings.afterLoad.call(this);
