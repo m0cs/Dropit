@@ -42,7 +42,7 @@
 
                         // Open this menu
                         settings.beforeShow.call(this);
-                        $(this).parents(settings.triggerParentEl).addClass('dropit-open').find(settings.submenuEl).show();
+                        $('#' + this.parentElement.id + ' .dropit-submenu').addClass('dropit-open').show();
                         settings.afterShow.call(this);
 
                         return false;
