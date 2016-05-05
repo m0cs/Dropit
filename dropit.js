@@ -1,7 +1,8 @@
 /*
- * Dropit v1.1.0
- * http://dev7studios.com/dropit
+ * Dropit v1.1.2
+ * https://github.com/m0cs/Dropit
  *
+ * From: http://dev7studios.com/dropit
  * Copyright 2012, Dev7studios
  * Free to use and abuse under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
